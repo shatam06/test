@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sing up</title>
+</head>
+<body>
+<form method="post" >
+    {% csrf_token %}
+    <label>name</label>
+    <input type="text" name="name" ><br><br>
+    <label>phone</label>
+    <input type="number" name="phone" ><br><br>
+    <label>addrass</label>
+    <input type="text" name="addrass" ><br><br>
+    <label>general</label>
+     <select name="general">
+     <option value="male">male</option><br><br>
+     <option value="female">female</option>
+     </select><br><br>
+
+    <label>birthday</label>
+    <input type="date" name="birthday" ><br><br>
+    <label>password</label>
+    <input type="password" name="password" ><br><br>
+    <label>con_password</label>
+    <input type="password" name="con_password" ><br><br>
+    <input type="submit" value="singup" >
+
+
+
+
+
+</form>
+</body>
+</html>
